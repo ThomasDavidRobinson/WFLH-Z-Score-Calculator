@@ -1,0 +1,65 @@
+{
+    "name": "Z-Score Calculator",
+    "namespace": "MSHR\\zScoreCalculator",
+    "description": "Provides an offline, simple caluclator to calculate z-score using WHO tables",
+    "version": "1.0",
+    "documentation": "README.md",
+    "authors": [
+        {
+            "name": "Thomas Robinson",
+            "email": "thomas.robinson@menzies.edu.au",
+            "institution": "Menzies School of Health Research"
+        }
+    ],
+    "framework-version": 16,
+    "system-settings": [],
+    "project-settings": [
+    {
+      "key": "input-fields",
+      "name": "Input Fields Set",
+      "required": true,
+      "type": "sub_settings",
+      "repeatable": true,
+      "sub_settings": [
+        {
+          "key": "height-field",
+          "name": "Height Field",
+          "type": "field-list"
+        },
+        {
+          "key": "weight-field",
+          "name": "Weight Field", 
+          "type": "field-list"
+        },
+        {
+          "key": "age-field",
+          "name": "Age Field",
+          "type": "field-list"
+        },
+        {
+          "key": "sex-field",
+          "name": "Sex Field",
+          "type": "field-list"
+        },
+        {
+          "key": "zscore-field",
+          "name": "Z-Score Output Field",
+          "type": "field-list"
+        },
+         {
+      "key": "enabled-instruments",
+      "name": "Enabled Instruments",
+      "type": "form-list",
+      "multi_select": true
+    }
+      ]
+    },
+    {
+      "key": "enable-logging",
+      "name": "Enable Debug Logging",
+      "type": "checkbox"
+    }
+   
+  ]
+    
+}
