@@ -29,7 +29,7 @@ class zScoreCalculator extends AbstractExternalModule {
 public function redcap_data_entry_form($project_id) {
     $this->log('HOOK FIRED - zScoreCalculator active');
     
-    $currentInstrument = $this->getUrlParameter('page') ?? '';
+    $currentInstrument = $this->escape($_GET['page'] ?? '');
     $enabledInstruments = $this->getProjectSetting('enabled-instruments') ?? [];
 
     $this->log("Current Instrument: '$currentInstrument'");
