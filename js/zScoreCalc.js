@@ -65,7 +65,13 @@ function createZScoreCalculator(heightField, weightField, ageField, sexField, zs
             typeof correctedHeight
         )
         let zscore_intermediate
-        if (age < 24) {
+        
+        if (correctedHeight === 0 || correctedWeight === 0) {
+            zscoreFieldEl.value = null
+            return
+        }
+
+        if (correctedAge < 24) {
             if (sex === '0') {
                 console.log('utwogirl')
                 if (correctedHeight >= 45 && correctedHeight <= 110) {
