@@ -87,7 +87,7 @@ function createZScoreCalculator(heightField, weightField, ageField, sexField, zs
                         const temp = (weight - sd3neg) / sd23neg
                         zscore_intermediate = -3 + temp
                     } else if (zscore > 3) {
-                        zscore_intermediate = 3 + (weight - sd23pos) / sd23pos
+                        zscore_intermediate = 3 + (weight - sd3pos) / sd23pos
                     } else {
                         zscore_intermediate = zscore
                     }
@@ -114,7 +114,7 @@ function createZScoreCalculator(heightField, weightField, ageField, sexField, zs
                         const temp = (weight - sd3neg) / sd23neg
                         zscore_intermediate = -3 + temp
                     } else if (zscore > 3) {
-                        zscore_intermediate = 3 + (weight - sd23pos) / sd23pos
+                        zscore_intermediate = 3 + (weight - sd3pos) / sd23pos
                     } else {
                         zscore_intermediate = zscore
                     }
@@ -143,7 +143,7 @@ function createZScoreCalculator(heightField, weightField, ageField, sexField, zs
                         const temp = (weight - sd3neg) / sd23neg
                         zscore_intermediate = -3 + temp
                     } else if (zscore > 3) {
-                        zscore_intermediate = 3 + (weight - sd23pos) / sd23pos
+                        zscore_intermediate = 3 + (weight - sd3pos) / sd23pos
                     } else {
                         zscore_intermediate = zscore
                     }
@@ -171,7 +171,7 @@ function createZScoreCalculator(heightField, weightField, ageField, sexField, zs
                         const temp = (weight - sd3neg) / sd23neg
                         zscore_intermediate = -3 + temp
                     } else if (zscore > 3) {
-                        zscore_intermediate = 3 + (weight - sd23pos) / sd23pos
+                        zscore_intermediate = 3 + (weight - sd3pos) / sd23pos
                     } else {
                         zscore_intermediate = zscore
                     }
